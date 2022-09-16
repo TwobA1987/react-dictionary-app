@@ -16,6 +16,6 @@ export default function ResultShow(props) {
       </div>
     );
   } else {
-    return "Not Found";
+    return null;
   }
 }
