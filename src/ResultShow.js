@@ -5,14 +5,19 @@ export default function ResultShow(props) {
   if (props.data) {
     return (
       <div className="ResultShow">
-        <h1>{props.data.word}</h1>
-        {props.data.meanings.map(function (meaning, index) {
-          return (
-            <div key={index}>
-              <MeaningsShow data={meaning} />
-            </div>
-          );
-        })}
+        <div className="word">
+          <h1>{props.data.word}</h1>
+          <p>{props.data.phonetic}</p>
+        </div>
+        <div className="meanings">
+          {props.data.meanings.map(function (meaning, index) {
+            return (
+              <div key={index}>
+                <MeaningsShow data={meaning} />
+              </div>
+            );
+          })}
+        </div>
       </div>
     );
   } else {
