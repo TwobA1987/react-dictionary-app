@@ -2,7 +2,7 @@ import React from "react";
 export default function MeaningsShow(props) {
   return (
     <div className="MeaningsShow">
-      <h4>{props.data.partOfSpeech}</h4>
+      <h4 className="text-secondary">{props.data.partOfSpeech}</h4>
       <ul>
         {props.data.definitions.map(function (definition, index) {
           return (
@@ -10,7 +10,7 @@ export default function MeaningsShow(props) {
               <li>
                 {definition.definition}
                 <div>
-                  <em className="text-danger">{definition.example}</em>
+                  <em className="text-secondary">{definition.example}</em>
                 </div>
               </li>
             </div>
