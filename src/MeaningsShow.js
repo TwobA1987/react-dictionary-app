@@ -7,11 +7,28 @@ export default function MeaningsShow(props) {
         {props.data.definitions.map(function (definition, index) {
           return (
             <div key={index}>
-              <li>{definition.definition}</li>
+              <li>
+                {definition.definition}
+                <div>
+                  <em className="text-danger">{definition.example}</em>
+                </div>
+              </li>
             </div>
           );
         })}
       </ul>
+      <div className="d-flex flex-sm-row align-content-start flex-wrap">
+        {props.data.synonyms.map(function (synonym, index) {
+          return (
+            <div
+              className="p-1 m-1  border border-secondary text-dark rounded"
+              key={index}
+            >
+              {synonym}
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
