@@ -1,11 +1,12 @@
 input {
   margin: 10px auto;
-  line-height: 50px;
+  line-height: 21px;
+  height: 64px;
   color: #70757a;
   border: 1px solid #dadce0;
   border-radius: 7px;
-  width: 700px;
-  padding-left: 14px;
+  width: 100%;
+  padding: 20px;
   font-size: 18px;
 }
 section {
