@@ -12,7 +12,7 @@ export default function PhotosShow(props) {
                   <img
                     src={Photo.src.landscape}
                     className="img-fluid"
-                    alt={Photo.alt}
+                    alt={Photo.photographer}
                   />
                 </a>
               </div>
