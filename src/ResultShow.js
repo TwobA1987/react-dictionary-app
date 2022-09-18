@@ -6,7 +6,7 @@ export default function ResultShow(props) {
   if (props.data) {
     return (
       <div className="ResultShow">
-        <div className="word">
+        <section className="word">
           <h1>{props.data.word}</h1>
           <p>
             {props.data.phonetics.map(function (Phonetic, index) {
@@ -17,16 +17,14 @@ export default function ResultShow(props) {
               );
             })}
           </p>
-        </div>
-        <div className="meanings">
-          {props.data.meanings.map(function (meaning, index) {
-            return (
-              <div key={index}>
-                <MeaningsShow data={meaning} />
-              </div>
-            );
-          })}
-        </div>
+        </section>
+        {props.data.meanings.map(function (meaning, index) {
+          return (
+            <div key={index}>
+              <MeaningsShow data={meaning} />
+            </div>
+          );
+        })}
       </div>
     );
   } else {

@@ -1,13 +1,6 @@
 .ResultShow {
   text-align: left;
 }
-.word,
-.MeaningsShow {
-  padding: 10px 20px;
-  background-color: white;
-  border-radius: 15px;
-  margin: 10px;
-}
 ul {
   list-style: none;
 }

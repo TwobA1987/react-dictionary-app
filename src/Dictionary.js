@@ -11,7 +11,6 @@ export default function Dictionary() {
     setKeyWord(event.target.value);
   }
   function HandleResponse(response) {
-    console.log(response.data[0]);
     setResults(response.data[0]);
   }
   function Search(event) {
@@ -21,19 +20,16 @@ export default function Dictionary() {
   }
   return (
     <div className="Dictionary">
-      <form className="input-group">
-        <input
-          type="search"
-          className="form-control rounded"
-          placeholder="enter a word"
-          aria-label="Search"
-          aria-describedby="search-addon"
-          autoFocus="on"
-          onChange={HandleKeyWordChange}
-          onSubmit={Search}
-        />
-        <input type="submit" className="btn btn-info" onClick={Search} />
-      </form>
+      <section>
+        <h2>Dictionary</h2>
+        <form onSubmit={Search}>
+          <input
+            type="search"
+            placeholder="Search for a word and press enter"
+            onChange={HandleKeyWordChange}
+          />
+        </form>
+      </section>
       <ResultShow data={Results} />
     </div>
   );

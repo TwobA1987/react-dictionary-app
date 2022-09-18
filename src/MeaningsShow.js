@@ -2,7 +2,7 @@ import React from "react";
 import Synonyms from "./Synonyms";
 export default function MeaningsShow(props) {
   return (
-    <div className="MeaningsShow">
+    <section className="MeaningsShow">
       <h4 className="text-secondary">{props.data.partOfSpeech}</h4>
       <ul className="list-group list-group-flush">
         {props.data.definitions.map(function (definition, index) {
@@ -19,6 +19,6 @@ export default function MeaningsShow(props) {
         })}
       </ul>
       <Synonyms data={props.data.synonyms} />
-    </div>
+    </section>
   );
 }
