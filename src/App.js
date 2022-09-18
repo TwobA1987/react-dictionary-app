@@ -11,7 +11,7 @@ export default function App() {
         </header>
         <Dictionary />
       </div>
-      <footer className="App-footer">
+      <footer className="App-footer mb-5">
         This project was coded by Touba Raeesi and is{" "}
         <a href="https://github.com/TwobA1987/react-dictionary-app">
           {" "}
