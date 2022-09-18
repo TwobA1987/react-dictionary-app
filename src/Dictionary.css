@@ -15,3 +15,12 @@ section {
   margin: 15px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
+.source {
+  font-size: 13px;
+  text-decoration: none;
+  color: #70757a;
+  margin-bottom: 0;
+}
+.source a {
+  color: #70757a;
+}

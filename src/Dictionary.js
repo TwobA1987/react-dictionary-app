@@ -22,6 +22,10 @@ export default function Dictionary() {
     <div className="Dictionary">
       <section>
         <h2>Dictionary</h2>
+        <p className="source">
+          Definitions from{" "}
+          <a href="https://dictionaryapi.dev/">Free Dictionary API</a>
+        </p>
         <form onSubmit={Search}>
           <input
             type="search"
